@@ -1,0 +1,46 @@
+.container .cube {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	transform-style: preserve-3d;
+}
+
+.container .face {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+.container .face:nth-child(1) {
+	background: red;
+	-webkit-transform: rotateX(90deg) translateZ(200px);
+}
+.container .face:nth-child(2) {
+	background: blue;
+	-webkit-transform: translateZ(200px);
+}
+.container .face:nth-child(3) {
+	background: green;
+	-webkit-transform: rotateY(90deg) translateZ(200px);
+}
+.container .face:nth-child(4) {
+	background: yellow;
+	-webkit-transform: rotateY(180deg) translateZ(200px);
+}
+.container .face:nth-child(5) {
+	background: brown;
+	-webkit-transform: rotateY(-90deg) translateZ(200px);
+}
+.container .face:nth-child(6) {
+	background: orange;
+	-webkit-transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+}
